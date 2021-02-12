@@ -1,0 +1,30 @@
+.header {
+  height: 95vh;
+  background: linear-gradient(
+      to top,
+      rgba($color-primary-dark, 0.8),
+      rgba($color-primary-light, 0.9)
+    ),
+    url(../img/pexels-rahul-2081499.jpg) center/cover no-repeat;
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0% 100%);
+  position: relative;
+
+  &__logo-container {
+    width: 100px;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+  }
+
+  &__logo {
+    width: 100%;
+  }
+
+  &__banner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+}

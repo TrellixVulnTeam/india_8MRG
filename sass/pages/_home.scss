@@ -1,0 +1,102 @@
+.section-about {
+  background: $color-grey-light-1;
+  margin-top: -20vh;
+  padding: 20rem 0;
+}
+
+.section-features {
+  padding: 20rem 0;
+  background: linear-gradient(
+      to top,
+      rgba($color-primary-dark, 0.8),
+      rgba($color-primary-light, 0.9)
+    ),
+    url(../../img/pexels-navneet-shanu-672630.jpg) center/cover no-repeat;
+  transform: skewY(-7deg);
+  margin-top: -8rem;
+
+  & > * {
+    transform: skewY(7deg);
+  }
+}
+
+.section-tours {
+  background: $color-grey-light-1;
+  padding: 25rem 0 10rem 0;
+  margin-top: -10rem;
+}
+
+.section-stories {
+  padding: 15rem 0;
+  position: relative;
+}
+
+.section-form {
+  padding: 15rem 0;
+  background: linear-gradient(
+    to left,
+    $color-secondary-dark,
+    $color-secondary-light
+  );
+}
+
+.book {
+  background: linear-gradient(
+      105deg,
+      rgba($color-white, 0.9) 50%,
+      transparent 50%
+    ),
+    url(../../img/manyu-varma-mM6cUV3B9M8-unsplash.jpg) center/cover;
+
+  &__form {
+    width: 50%;
+    padding: 6rem;
+  }
+}
+
+.footer {
+  padding: 10rem 0;
+  background: $color-grey-dark-3;
+
+  &__photo {
+    width: 15rem;
+    margin: 0 auto;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__list {
+    li {
+      border-top: 0.1rem solid rgba($color-white, 0.5);
+      padding-top: 2rem;
+      float: left;
+
+      a {
+        color: $color-white;
+        text-decoration: none;
+        text-transform: uppercase;
+        display: inline-block;
+        padding: 0rem 1rem;
+        transition: all 0.2s;
+        font-size: 1.4rem;
+      }
+
+      &:hover a {
+        color: $color-primary;
+        transform: scale(1.2) rotate(5deg);
+        box-shadow: 0 2rem 2.5rem rgba(black, 0.5);
+      }
+    }
+  }
+
+  &__text {
+    color: $color-white;
+    font-size: 1.4rem;
+    width: 80%;
+    float: right;
+    border-top: 0.1rem solid rgba($color-white, 0.5);
+    padding-top: 2rem;
+  }
+}
