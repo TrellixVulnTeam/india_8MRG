@@ -588,6 +588,10 @@ body {
     .navigation__btn {
       top: 3rem;
       right: 3rem; } }
+  @media screen and (max-width: 37.5em) {
+    .navigation__btn {
+      top: 1rem;
+      right: 1rem; } }
 
 .navigation__bg {
   height: 6rem;
@@ -604,6 +608,10 @@ body {
     .navigation__bg {
       top: 3.5rem;
       right: 3.5rem; } }
+  @media screen and (max-width: 37.5em) {
+    .navigation__bg {
+      top: 1.5rem;
+      right: 1.5rem; } }
 
 .navigation__nav {
   height: 100vh;
