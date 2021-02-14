@@ -58,6 +58,10 @@
   padding: 10rem 0;
   background: $color-grey-dark-3;
 
+  @include respond(tab-port) {
+    padding: 5rem 0;
+  }
+
   &__photo {
     width: 15rem;
     margin: 0 auto;
@@ -68,10 +72,19 @@
   }
 
   &__list {
-    li {
+    ul {
       border-top: 0.1rem solid rgba($color-white, 0.5);
+      display: inline-block;
+    }
+
+    li {
       padding-top: 2rem;
       float: left;
+
+      @include respond(tab-port) {
+        width: 100%;
+        text-align: center;
+      }
 
       a {
         color: $color-white;
@@ -98,5 +111,10 @@
     float: right;
     border-top: 0.1rem solid rgba($color-white, 0.5);
     padding-top: 2rem;
+
+    @include respond(tab-port) {
+      width: 100%;
+      text-align: center;
+    }
   }
 }
