@@ -9,6 +9,12 @@
     transition: all 0.2s;
     box-shadow: 0 1.5rem 5rem rgba($color-black, 0.4);
 
+    @include respond(tab-port) {
+      position: relative;
+      float: left;
+      width: 33.33%;
+    }
+
     &:hover {
       transform: scale(1.2) translateY(-1rem);
       z-index: 5;
@@ -19,16 +25,31 @@
 
     &--p1 {
       top: -2rem;
+
+      @include respond(tab-port) {
+        top: 0;
+      }
     }
 
     &--p2 {
       right: 0;
       top: 5rem;
+
+      @include respond(tab-port) {
+        top: 0;
+        transform: scale(1.1);
+        z-index: 2;
+      }
     }
 
     &--p3 {
       top: 15rem;
       left: 10rem;
+
+      @include respond(tab-port) {
+        top: 0;
+        left: 0;
+      }
     }
   }
 

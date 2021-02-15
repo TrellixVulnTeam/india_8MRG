@@ -31,6 +31,10 @@
     border-radius: 0.4rem;
     box-shadow: 2rem 2rem 5rem rgba($color-black, 0.2);
     transition: all 0.3s 0.4s;
+
+    @include respond(tab-port) {
+      height: auto;
+    }
   }
 
   &__left {

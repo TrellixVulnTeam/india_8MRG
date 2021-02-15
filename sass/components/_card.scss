@@ -166,3 +166,50 @@
     font-weight: 100;
   }
 }
+
+@include respond(tab-port) {
+  .card {
+    position: relative;
+     box-shadow: $box-shadow-dark;
+
+    &__side {
+      &--front {
+        background: $color-white;
+        padding-bottom: 5rem;
+      }
+
+      &--back {
+        transform: rotateY(0);
+        position: relative;
+        top: 0rem;
+        left: 0;
+        height: auto;
+        width: auto;
+        clip-path: polygon(0 20%, 100% 0%, 100% 100%, 0 100%);
+        padding: 3rem 0;
+        margin-top: -5rem;
+        border-top-right-radius: 0;
+      }
+    }
+
+    &:hover &__side--front {
+      transform: rotate(0deg);
+    }
+
+    &__info {
+      position: relative;
+      top: 0;
+      left: 0;
+      transform: translate(0);
+    }
+
+    &__price-box {
+      margin-bottom: 1rem;
+    }
+
+    &__price-value {
+      font-size: 6rem;
+      font-weight: 100;
+    }
+  }
+}

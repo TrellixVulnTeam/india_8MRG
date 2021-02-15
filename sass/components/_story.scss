@@ -7,8 +7,17 @@
   box-shadow: $box-shadow-dark;
   border-radius: 0.5rem;
 
+  @include respond(tab-port) {
+    transform: skew(0deg);
+    width: 100%;
+  }
+
   & > * {
     transform: skewX(12deg);
+
+    @include respond(tab-port) {
+      transform: skew(0deg);
+    }
   }
 
   &__shape {
@@ -53,5 +62,3 @@
     transition: all 0.4s linear;
   }
 }
-
-

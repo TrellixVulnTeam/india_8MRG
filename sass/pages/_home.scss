@@ -48,9 +48,22 @@
     ),
     url(../../img/manyu-varma-mM6cUV3B9M8-unsplash.jpg) center/cover;
 
+  @include respond(tab-land) {
+    background: linear-gradient(
+        to right,
+        rgba($color-white, 0.9) 100%,
+        transparent 50%
+      ),
+      url(../../img/manyu-varma-mM6cUV3B9M8-unsplash.jpg) center/cover;
+  }
+
   &__form {
     width: 50%;
     padding: 6rem;
+
+    @include respond(tab-land){
+      width: 100%;
+    }
   }
 }
 
