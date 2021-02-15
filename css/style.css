@@ -53,10 +53,17 @@ body {
     letter-spacing: 3.5rem;
     display: block;
     padding-left: 3.5rem; }
+    @media screen and (max-width: 37.5em) {
+      .primary-heading--main {
+        font-size: 5rem;
+        padding-left: .5rem; } }
   .primary-heading--sub {
     display: block;
     font-size: 2rem;
     letter-spacing: 0.3rem; }
+    @media screen and (max-width: 37.5em) {
+      .primary-heading--sub {
+        font-size: 1.8rem; } }
 
 .secondary-heading {
   font-size: 3.5rem;
@@ -587,18 +594,22 @@ body {
     .header {
       clip-path: polygon(0 0, 100% 0, 100% 85vh, 0% 100%); } }
   .header__logo-container {
-    width: 100px;
+    width: 8rem;
     position: absolute;
-    top: 1rem;
-    left: 1rem; }
+    top: 2rem;
+    left: 2rem; }
   .header__logo {
     width: 100%; }
   .header__banner {
     position: absolute;
+    width: 100%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
+    @media screen and (max-width: 37.5em) {
+      .header__banner {
+        overflow-x: hidden; } }
 
 .navigation__checkbox {
   z-index: 15;
@@ -651,9 +662,6 @@ body {
     .navigation__btn {
       top: 3rem;
       right: 3rem; } }
-  @media screen and (max-width: 400px) {
-    .navigation__btn {
-      right: 14rem; } }
 
 .navigation__bg {
   height: 6rem;

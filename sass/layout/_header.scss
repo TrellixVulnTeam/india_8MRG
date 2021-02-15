@@ -18,10 +18,10 @@
   }
 
   &__logo-container {
-    width: 100px;
+    width: 8rem;
     position: absolute;
-    top: 1rem;
-    left: 1rem;
+    top: 2rem;
+    left: 2rem;
   }
 
   &__logo {
@@ -30,9 +30,14 @@
 
   &__banner {
     position: absolute;
+    width: 100%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+
+    @include respond(phone) {
+      overflow-x: hidden;
+    }
   }
 }
